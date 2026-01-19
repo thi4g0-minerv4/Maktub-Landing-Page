@@ -60,7 +60,7 @@ header>.header-main {
 }
 /* Style/Display Header */
 
-/* Main */
+/* ==== Main ==== */
 main {
     background-color: var(--complementar-color);
 }
@@ -71,9 +71,17 @@ main > section {
 
     padding: 40px;
 }
-/* Presentation */
 
-/* Exibition images */
+/* ==== Presentation ==== */
+/* Background Presentation */
+main>.presentation {
+    background-color: var(--main-color);
+    background-image: url("/static/imgs/backgroundimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ==== Exibition images ==== */
 section.exibition {
     padding: 0;
 }

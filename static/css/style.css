@@ -1,9 +1,12 @@
-/* Estilo Geral */
+/* ==== Estilo Geral ==== */
 :root {
     --main-color: #8C2C2E;
     --complementar-color: #EAEAE5;
-    --white-text: #FFF6EB;
+    --white-text: #ffff;
     --black-text: #674930;
+}
+* {
+    color: var(--white-text);
 }
 .btn-reserva {
     display: inline-flex; /* ou flex */
@@ -28,7 +31,34 @@
     transform: scale(1.8);
 }
 
-/* Header */
+/* ==== Header ==== */
+/* Background Header */
+header {
+    position: relative;
+    background-color: var(--complementar-color);
+}
+header>.header-main {
+
+    height: 70vh;
+    
+    background-image: url("/static/imgs/maktubedificio_desktop.png");
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@media (max-width: 768px) {
+    header > .header-main {
+        background-image: url('/static/imgs/maktubedificio_mobile.png');
+    }
+}
+@media (min-width: 1500px) {
+    header>.header-main {
+        height: 90vh;
+    }
+    
+}
+/* Style/Display Header */
 
 /* Main */
 main {
@@ -42,7 +72,7 @@ main > section {
     padding: 40px;
 }
 /* Presentation */
-m
+
 /* Exibition images */
 section.exibition {
     padding: 0;

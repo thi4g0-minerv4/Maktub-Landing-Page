@@ -30,6 +30,9 @@
 .big {
     transform: scale(1.8);
 }
+.left, .right {
+    width: 50vw;
+}
 
 /* ==== Header ==== */
 /* Background Header */
@@ -74,23 +77,52 @@ main > section {
 
 /* ==== Presentation ==== */
 /* Background Presentation */
-main>.presentation {
+main>section.presentation {
+    padding: 100px 40px;
+
     background-color: var(--main-color);
     background-image: url("/static/imgs/backgroundimg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
+.presentation>div.content {
+    display: flex;
+    align-items: center;
+    margin: auto;
 
-/* ==== Exibition images ==== */
-section.exibition {
+    max-width: 1200px;
+}
+.presentation h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.presentation p {
+    text-align: justify;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
+/* ==== Exibition ==== */
+main>section.exibition {
     padding: 0;
 }
+/* Room Images */
 .room>img {
     display: block;
     width: 100%;
 }
 
-/* Estilo do Cabeçalho */
+/* ==== Details ==== */
+
+main>section.details {
+    display: flex;
+}
+/* ==== End ==== */
+main>section.end {
+    display: flex;
+}
+/* ==== Footer ==== */
 footer {
     background-color: var(--main-color);
     color: white;

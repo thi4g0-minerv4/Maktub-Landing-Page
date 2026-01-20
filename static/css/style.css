@@ -78,7 +78,7 @@ main > section {
 /* ==== Presentation ==== */
 /* Background Presentation */
 main>section.presentation {
-    padding: 100px 40px;
+    padding: 140px 40px;
 
     background-color: var(--main-color);
     background-image: url("/static/imgs/backgroundimg.png");
@@ -93,15 +93,23 @@ main>section.presentation {
     max-width: 1200px;
 }
 .presentation h2 {
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 400;
 }
 .presentation p {
     text-align: justify;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    line-height: 1.6;
 }
-
+@media (max-width: 768px) {
+    .presentation>div.content {
+        display: block;
+    }
+    .presentation h2 {
+        font-size: 3em;
+        margin-bottom: 25px;
+    }
+}
 
 /* ==== Exibition ==== */
 main>section.exibition {

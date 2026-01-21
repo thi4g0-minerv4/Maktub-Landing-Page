@@ -33,6 +33,10 @@
 .left, .right {
     width: 50vw;
 }
+.icon {
+    width: 26px;
+    filter: invert(1);
+}
 
 /* ==== Header ==== */
 /* Background Header */
@@ -135,7 +139,45 @@ footer {
     background-color: var(--main-color);
     color: white;
 
-    padding: 25px;
-    text-align: center;
-
+    padding: 30px 25px 30px 25px;
 }
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+footer>.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1700px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+footer>.top-footer>p {
+    text-align: center;
+}
+footer a.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-bottom: 10px;
+}
+
+footer>.bottom-footer>p {
+    font-size: 1.4em;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    footer a.social {
+        font-size: 13px;
+    }
+    footer>.top-footer>p {
+        font-size: 0.9em;
+    }
+    footer>.bottom-footer>p {
+        font-size: 1em;
+    }
+
+}blablaa

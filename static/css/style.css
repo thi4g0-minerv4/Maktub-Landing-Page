@@ -2,11 +2,9 @@
 :root {
     --main-color: #8C2C2E;
     --complementar-color: #EAEAE5;
+    --complementar-color2: #F9F7F0;
     --white-text: #ffff;
     --black-text: #674930;
-}
-* {
-    color: var(--white-text);
 }
 .btn-reserva {
     display: inline-flex; /* ou flex */
@@ -42,6 +40,8 @@
 /* Background Header */
 header {
     position: relative;
+
+    color: var(--white-text);
     background-color: var(--complementar-color);
 }
 header>.header-main {
@@ -70,6 +70,7 @@ header>.header-main {
 /* ==== Main ==== */
 main {
     background-color: var(--complementar-color);
+    color: var(--white-text);
 }
 main > section {
     background-color: white;
@@ -126,10 +127,13 @@ main>section.exibition {
 }
 
 /* ==== Details ==== */
-
 main>section.details {
     display: flex;
+
+    background-color: var(--complementar-color2);
+    color: var(--main-color);
 }
+
 /* ==== End ==== */
 main>section.end {
     display: flex;
@@ -137,12 +141,11 @@ main>section.end {
 /* ==== Footer ==== */
 footer {
     background-color: var(--main-color);
-    color: white;
+    color: var(--white-text);
 
     padding: 30px 25px 30px 25px;
 }
 footer a {
-    text-decoration: none;
     color: inherit;
 }
 footer>.top-footer {
@@ -162,6 +165,8 @@ footer a.social {
     align-items: center;
     gap: 10px;
 
+    text-decoration: none;
+
     padding-bottom: 10px;
 }
 
@@ -180,4 +185,4 @@ footer>.bottom-footer>p {
         font-size: 1em;
     }
 
-}blablaa
+}

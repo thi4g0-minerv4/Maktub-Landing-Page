@@ -133,6 +133,33 @@ main>section.details {
     background-color: var(--complementar-color2);
     color: var(--main-color);
 }
+.details p {
+    color: #674930;
+    font-size: clamp(0.95rem, 1.5vw, 1.6rem);
+    line-height: 1.6;
+}
+.details h2 {
+    font-weight: 400;
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+
+    margin-bottom: 10px;
+}
+.details>div.left, details>div.right {
+    padding: 15px;
+}
+.details>div.left {
+    border-right: 2px solid rgb(168, 168, 168);
+}
+.details ul {
+    padding-left: 20px;
+    height: max-content;
+}
+.details li {
+    font-size: 1.5em;
+    line-height: 100px;
+    list-style-position: inside;
+}
+
 
 /* ==== End ==== */
 main>section.end {

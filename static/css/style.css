@@ -111,7 +111,7 @@ main>section.presentation {
         display: block;
     }
     .presentation h2 {
-        font-size: 3em;
+        font-size: 2.5em;
         margin-bottom: 25px;
     }
 }
@@ -130,6 +130,7 @@ main>section.exibition {
 main>section.details {
     display: flex;
 
+
     background-color: var(--complementar-color2);
     color: var(--main-color);
 }
@@ -140,31 +141,51 @@ main>section.details {
 }
 .details h2 {
     font-weight: 400;
-    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.6rem);
 
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .details>div.left, details>div.right {
-    padding: 15px;
+    padding: 30px clamp(20px, 5vw, 70px);
 }
 .details>div.left {
     border-right: 2px solid rgb(168, 168, 168);
 }
 .details ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
     padding-left: 20px;
-    height: max-content;
+
 }
 .details li {
-    font-size: 1.5em;
-    line-height: 100px;
+    font-size: clamp(1.1em, 2.5vw, 2.5rem);
+    
     list-style-position: inside;
 }
-
+@media (max-width: 768px) {
+    main>section.details {
+        flex-direction: column;
+    }
+    .details>div.left, .details>div.right {
+        width: 100%;
+    }
+    .details>div.left {
+        margin-bottom: 30px;
+        border-right: none;
+        border-bottom: 2px solid rgb(168, 168, 168);
+    }
+    .details li {
+        padding-bottom: 15px;
+    }
+}
 
 /* ==== End ==== */
 main>section.end {
     display: flex;
 }
+
 /* ==== Footer ==== */
 footer {
     background-color: var(--main-color);

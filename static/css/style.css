@@ -45,9 +45,15 @@ header {
     background-color: var(--complementar-color);
 }
 header>.header-main {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
 
+
+    padding: 200px; */
     height: 70vh;
-    
+
     background-image: url("/static/imgs/maktubedificio_desktop.png");
     background-position: right top;
     background-size: cover;
@@ -63,7 +69,7 @@ header>.header-main {
     header>.header-main {
         height: 90vh;
     }
-    
+
 }
 /* Style/Display Header */
 
@@ -161,7 +167,7 @@ main>section.details {
 }
 .details li {
     font-size: clamp(1.1em, 2.5vw, 2.5rem);
-    
+
     list-style-position: inside;
 }
 @media (max-width: 768px) {
@@ -184,15 +190,17 @@ main>section.details {
 /* ==== End ==== */
 main>section.end {
     display: flex;
+
     background-image: url('/static/imgs/footerimg.png');
     background-size: cover;
+    background-repeat: no-repeat;
 
     height: 900px;
     padding: 0;
 }
 .end h2 {
-    font-size: 4em;
-    line-height: 75px;
+    font-size: clamp(2.2rem, 6vw, 4em);
+    line-height: clamp(1.2em, 5vw, 75px);
     font-weight: 400;
 
     margin-bottom: 60px;
@@ -205,11 +213,11 @@ main>section.end {
     padding: 40px;
 }
 .end>.left p {
-    font-size: 1.8em;
+    font-size: clamp(1.1rem, 2.2vw, 1.8em);
     margin-bottom: 20px;
 }
 .end>div.left address {
-    font-size: 1.8em;
+    font-size: clamp(1.1rem, 2.2vw, 1.8em);
 }
 .end>div.right {
     display: flex;
@@ -219,16 +227,52 @@ main>section.end {
     background-color: #9a1e1e94;
 
     width: 45%;
-    padding: 40px; 
+    padding: 40px;
 }
 .end>div.right p {
-    font-size: 40px;
+    font-size: clamp(1.4rem, 4vw, 40px);
 }
 .end>div.right a {
     margin: auto;
     transform: scale(3);
 }
+@media (max-width: 1300px) {
+    .end > div.right a {
+        transform: scale(1.7);
+    }
+    .end h2 {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 786px) {
+    main>section.end {
+        flex-direction: column-reverse;
+        justify-content: space-between;
 
+        height: 600px;
+    }
+    .end>div.left, .end>div.right {
+        background-color: #9a1e1e94;
+        flex: 1;
+        width: 100%;
+    }
+    .end>div.left {
+        align-items: center;
+        padding: 30px;
+    }
+    .end>div.right {
+        border-bottom: 3px solid rgb(177, 177, 177);
+    }
+    .end>div.right a {
+        transform: scale(1.3);
+        
+        margin: 0;
+        margin-left: 30px;
+    }
+    .end>div.right p {
+        margin-bottom: 60px;
+    }
+}
 
 
 /* ==== Footer ==== */

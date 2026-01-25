@@ -52,7 +52,6 @@ header>.header-main {
 
 
     height: 70vh;
-    min-height: 790px;
 
     background-image: url("/static/imgs/maktubedificio_desktop.png");
     background-position: right top;
@@ -75,7 +74,7 @@ header h1 {
 }
 header p {
     margin-bottom: 30px;
-    font-size: clamp(2em, 2.8vw, 2.5em);
+    font-size: clamp(1.7em, 2.8vw, 2.5em);
 
 }
 
@@ -90,8 +89,29 @@ header a.btn-reserva {
 
 @media (max-width: 768px) {
     header > .header-main {
+        height: 65vh;
         background-image: url('/static/imgs/maktubedificio_mobile.png');
     }
+    header .button {
+        padding: 60px 0px;
+    }
+    header h1, header p {
+        text-align: center;
+    }
+    header h1 {
+        color: var(--complementar-color);
+        font-weight: 800;
+        text-shadow:     -3px -3px 0 var(--main-color),
+     3px -3px 0 var(--main-color),
+    -3px  3px 0 var(--main-color),
+     3px  3px 0 var(--main-color);;
+    }
+    header a.btn-reserva {
+        margin: auto;
+    }
+    header a.btn-reserva {
+    transform: scale(1.2);
+}
 }
 @media (min-width: 1500px) {
     header>.header-main {

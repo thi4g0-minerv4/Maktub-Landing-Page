@@ -43,17 +43,15 @@ header {
     background-color: var(--complementar-color);
 }
 header>.header-main {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: end;
 
 
-    height: 70vh;
+    height: 900px;
 
-    background-image: url("../imgs/maktubedificio_desktop.png");
+    background-image: url("../imgs/maktubedificio-desktop.png");
     background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,8 +87,9 @@ header a.btn-reserva {
 
 @media (max-width: 768px) {
     header > .header-main {
-        height: 65vh;
-        background-image: url('../imgs/maktubedificio_mobile.png');
+        padding-bottom: 8rem;
+        min-height: 65vh;
+        background-image: url('../imgs/maktubedificio-mobile.png');
     }
     header .button {
         padding: 60px 0px;
@@ -115,8 +114,7 @@ header a.btn-reserva {
 }
 @media (min-width: 1500px) {
     header>.header-main {
-        min-height: 520px;
-        height: 100vh;
+        min-height: 100vh;
     }
 
 }
@@ -141,7 +139,7 @@ main>section.presentation {
     padding: 140px 40px;
 
     background-color: var(--main-color);
-    background-image: url("../imgs/backgroundimg.png");
+    background-image: url("../imgs/backgroundimage-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -153,7 +151,7 @@ main>section.presentation {
     max-width: 1200px;
 }
 .presentation h2 {
-    font-size: 4em;
+    font-size: clamp(3.5rem, 3.8vw, 4rem);
     font-weight: 400;
 }
 .presentation p {
@@ -162,8 +160,14 @@ main>section.presentation {
     line-height: 1.6;
 }
 @media (max-width: 768px) {
+    main>section.presentation {
+        background-image: url("../imgs/backgroundimage-mobile.png");
+
+        padding: 40px;
+    }
     .presentation>div.content {
-        display: block;
+        flex-direction: column;
+        align-items: start;
     }
     .presentation h2 {
         font-size: 2.5em;

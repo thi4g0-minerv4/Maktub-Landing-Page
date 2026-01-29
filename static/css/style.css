@@ -68,7 +68,7 @@ header .title {
 header h1 {
     color: var(--main-color);
 
-    font-size: clamp(3.2em, 4vw, 4em);
+    font-size: clamp(2.7em, 4vw, 4em);
 }
 header p {
     margin-bottom: 30px;
@@ -85,7 +85,7 @@ header a.btn-reserva {
     transform: scale(1.4);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header > .header-main {
         padding-bottom: 8rem;
         min-height: 65vh;
@@ -93,6 +93,9 @@ header a.btn-reserva {
     }
     header .button {
         padding: 60px 0px;
+    }
+    header .title {
+        padding: 0px, 40px;
     }
     header h1, header p {
         text-align: center;

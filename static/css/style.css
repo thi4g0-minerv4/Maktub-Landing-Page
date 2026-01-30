@@ -51,7 +51,7 @@ header>.header-main {
 
     height: 900px;
 
-    background-image: url("../imgs/maktubedificio-desktop.png");
+    background-image: url("../imgs/maktubedificio-desktop.jpg");
     background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ header a.btn-reserva {
     header > .header-main {
         padding-bottom: 8rem;
         min-height: 65vh;
-        background-image: url('../imgs/maktubedificio-mobile.png');
+        background-image: url('../imgs/maktubedificio-mobile.jpg');
     }
     header .button {
         padding: 60px 0px;
@@ -142,7 +142,7 @@ main>section.presentation {
     padding: 140px 40px;
 
     background-color: var(--main-color);
-    background-image: url("../imgs/backgroundimage-desktop.png");
+    background-image: url("../imgs/backgroundimage-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -164,7 +164,7 @@ main>section.presentation {
 }
 @media (max-width: 768px) {
     main>section.presentation {
-        background-image: url("../imgs/backgroundimage-mobile.png");
+        background-image: url("../imgs/backgroundimage-mobile.jpg");
 
         padding: 40px;
     }
@@ -247,7 +247,7 @@ main>section.details {
 main>section.end {
     display: flex;
 
-    background-image: url('../imgs/footerimg.png');
+    background-image: url('../imgs/footerimg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
